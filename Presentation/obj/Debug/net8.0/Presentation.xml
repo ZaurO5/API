@@ -4,6 +4,18 @@
         <name>Presentation</name>
     </assembly>
     <members>
+        <member name="M:Presentation.Controllers.AuthController.RegisterAsync(Business.Dtos.Auth.AuthRegisterDto)">
+            <summary>
+            User registration
+            </summary>
+            <param name="model"></param>
+        </member>
+        <member name="M:Presentation.Controllers.AuthController.LoginAsync(Business.Dtos.Auth.AuthLoginDto)">
+            <summary>
+            User login
+            </summary>
+            <param name="model"></param>
+        </member>
         <member name="M:Presentation.Controllers.ProductController.GetAllProductsAsync">
             <summary>
             Products List 
@@ -38,6 +50,28 @@
             Product deleting
             </summary>
             <param name="id"></param>
+        </member>
+        <member name="M:Presentation.Controllers.RoleController.GetAllRolesAsync">
+            <summary>
+            Roles list
+            </summary>
+        </member>
+        <member name="M:Presentation.Controllers.UserController.GetAllUsersAsync">
+            <summary>
+            Users list
+            </summary>
+        </member>
+        <member name="M:Presentation.Controllers.UserRoleController.AddRoleToUserAsync(Business.Dtos.UserRole.UserAddToRoleDto)">
+            <summary>
+            Adding role to user
+            </summary>
+            <param name="model"></param>
+        </member>
+        <member name="M:Presentation.Controllers.UserRoleController.RemoveRoleFromUserAsync(Business.Dtos.UserRole.UserRemoveRoleDto)">
+            <summary>
+            Deleting role from user
+            </summary>
+            <param name="model"></param>
         </member>
     </members>
 </doc>

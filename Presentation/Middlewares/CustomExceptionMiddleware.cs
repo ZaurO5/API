@@ -30,7 +30,15 @@ namespace Presentation.Middlewares
                         context.Response.StatusCode = StatusCodes.Status404NotFound;
                         response.Errors = ex.Errors;
                         break;
+                    case UnauthorizedException ex:
+                        context.Response.StatusCode = StatusCodes.Status401Unauthorized;
+                        response.Errors = ex.Errors;
+                        break;
                     default:
+                        Console.WriteLine(e.InnerException);
+                        Console.WriteLine(e.Message);
+                        
+                        context.Response.StatusCode = StatusCodes.Status500InternalServerError;
                         response.Message = "An error occurred";
                         break;
                 }

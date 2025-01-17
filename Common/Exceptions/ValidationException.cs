@@ -17,6 +17,11 @@ namespace Common.Exceptions
                 Errors.Add(error.ErrorMessage);
         }
 
+        public ValidationException(IEnumerable<string> errors)
+        {
+            Errors.AddRange(errors);
+        }
+
         public ValidationException(string error)
         {
             Errors.Add(error);

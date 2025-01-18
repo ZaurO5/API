@@ -1,11 +1,11 @@
 using API;
+using Business.Extensions;
 using Business.MappingProfiles;
 using Business.Services.Abstract;
 using Business.Services.Concrete;
 using Common.Entities;
 using Data.Contexts;
-using Data.Repositories.Abstract;
-using Data.Repositories.Concrete;
+using Data.Repositories.Product;
 using Data.UnitOfWork;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
@@ -89,13 +89,13 @@ builder.Services.AddAutoMapper(x =>
 
 #region Repositories
 
-builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<IProductReadRepository, ProductReadRepository>();
+builder.Services.AddScoped<IProductWriteRepository, ProductWriteRepository>();
 
 #endregion
 
 #region Services
 
-builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IUserRoleService, UserRoleService>();
 builder.Services.AddScoped<IUserService, UserService>();
@@ -104,6 +104,7 @@ builder.Services.AddScoped<IRoleService, RoleService>();
 #endregion
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddApplicationExtensions();
 
 var app = builder.Build();
 

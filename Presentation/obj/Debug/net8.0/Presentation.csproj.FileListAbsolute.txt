@@ -162,3 +162,5 @@ C:\Users\User\source\repos\API\Presentation\bin\Debug\net8.0\Microsoft.Extension
 C:\Users\User\source\repos\API\Presentation\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\User\source\repos\API\Presentation\obj\Debug\net8.0\Presentation.sourcelink.json
 C:\Users\User\source\repos\API\Presentation\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\User\source\repos\API\Presentation\bin\Debug\net8.0\MediatR.dll
+C:\Users\User\source\repos\API\Presentation\bin\Debug\net8.0\MediatR.Contracts.dll

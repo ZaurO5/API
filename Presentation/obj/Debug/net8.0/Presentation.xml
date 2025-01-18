@@ -21,13 +21,13 @@
             Products List 
             </summary>
         </member>
-        <member name="M:Presentation.Controllers.ProductController.GetResponseAsync(System.Int32)">
+        <member name="M:Presentation.Controllers.ProductController.GetProductAsync(System.Int32)">
             <summary>
             Get product by Id 
             </summary>
             <param name="id"></param>
         </member>
-        <member name="M:Presentation.Controllers.ProductController.CreateProductAsync(Business.Dtos.Product.ProductCreateDto)">
+        <member name="M:Presentation.Controllers.ProductController.CreateProductAsync(Business.Features.Product.Commands.CreateProduct.CreateProductCommand)">
             <summary>
             For product creating
             </summary>
@@ -36,14 +36,14 @@
             <li><b>Type:</b><p>0 - New, 1 - Sold</p></li>>
             </ul>  
             </remarks>
-            <param name="model"></param>
+            <param name="request"></param>
         </member>
-        <member name="M:Presentation.Controllers.ProductController.UpdateProductAsync(System.Int32,Business.Dtos.Product.ProductUpdateDto)">
+        <member name="M:Presentation.Controllers.ProductController.UpdateProductAsync(System.Int32,Business.Features.Product.Commands.UpdateProduct.UpdateProductCommand)">
             <summary>
             Product Updating
             </summary>
             <param name="id"></param>
-            <param name="model"></param>
+            <param name="request"></param>
         </member>
         <member name="M:Presentation.Controllers.ProductController.DeleteProductAsync(System.Int32)">
             <summary>

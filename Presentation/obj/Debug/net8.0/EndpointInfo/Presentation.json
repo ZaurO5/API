@@ -244,17 +244,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ProductCreateDto"
+                "$ref": "#/components/schemas/CreateProductCommand"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/ProductCreateDto"
+                "$ref": "#/components/schemas/CreateProductCommand"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/ProductCreateDto"
+                "$ref": "#/components/schemas/CreateProductCommand"
               }
             }
           }
@@ -505,17 +505,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ProductUpdateDto"
+                "$ref": "#/components/schemas/UpdateProductCommand"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/ProductUpdateDto"
+                "$ref": "#/components/schemas/UpdateProductCommand"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/ProductUpdateDto"
+                "$ref": "#/components/schemas/UpdateProductCommand"
               }
             }
           }
@@ -980,7 +980,7 @@
         },
         "additionalProperties": false
       },
-      "ProductCreateDto": {
+      "CreateProductCommand": {
         "type": "object",
         "properties": {
           "name": {
@@ -1084,35 +1084,6 @@
         "type": "integer",
         "format": "int32"
       },
-      "ProductUpdateDto": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "description": {
-            "type": "string",
-            "nullable": true
-          },
-          "photo": {
-            "type": "string",
-            "nullable": true
-          },
-          "price": {
-            "type": "number",
-            "format": "double"
-          },
-          "quantity": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "type": {
-            "$ref": "#/components/schemas/ProductType"
-          }
-        },
-        "additionalProperties": false
-      },
       "Response": {
         "type": "object",
         "properties": {
@@ -1157,6 +1128,39 @@
           "message": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateProductCommand": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "photo": {
+            "type": "string",
+            "nullable": true
+          },
+          "price": {
+            "type": "number",
+            "format": "double"
+          },
+          "quantity": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "type": {
+            "$ref": "#/components/schemas/ProductType"
           }
         },
         "additionalProperties": false

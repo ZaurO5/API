@@ -1,6 +1,4 @@
-﻿using Common.Entities;
-using Data.Contexts;
-using Data.Repositories.Abstract;
+﻿using Data.Contexts;
 using Data.Repositories.Base;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -9,18 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Data.Repositories.Concrete
+namespace Data.Repositories.Product
 {
-    public class ProductRepository : BaseRepository<Product>, IProductRepository
+    public class ProductReadRepository : BaseReadRepository<Common.Entities.Product>, IProductReadRepository
     {
         private readonly AppDbContext _context;
 
-        public ProductRepository(AppDbContext context) : base(context)
+        public ProductReadRepository(AppDbContext context) : base(context)
         {
             _context = context;
         }
 
-        public async Task<Product> GetByNameAsync(string name)
+        public async Task<Common.Entities.Product> GetByNameAsync(string name)
         {
             return await _context.Products.FirstOrDefaultAsync(p => p.Name.ToLower() == name.ToLower());
         }

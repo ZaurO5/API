@@ -1,16 +1,15 @@
-﻿using Business.Dtos.Product;
-using FluentValidation;
+﻿using FluentValidation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Business.Validators.Product
+namespace Business.Features.Product.Commands.CreateProduct
 {
-    public class ProductCreateDtoValidator : AbstractValidator<ProductCreateDto>
+    public class CreateProductCommandValidator : AbstractValidator<CreateProductCommand>
     {
-        public ProductCreateDtoValidator()
+        public CreateProductCommandValidator()
         {
             RuleFor(x => x.Name)
                 .NotEmpty()

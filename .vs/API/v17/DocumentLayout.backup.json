@@ -3,36 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FB33A72F-8091-4F8C-9214-4A9EBEB12BC3}|Presentation\\Presentation.csproj|c:\\users\\user\\source\\repos\\api\\presentation\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB33A72F-8091-4F8C-9214-4A9EBEB12BC3}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB33A72F-8091-4F8C-9214-4A9EBEB12BC3}|Presentation\\Presentation.csproj|c:\\users\\user\\source\\repos\\api\\presentation\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB33A72F-8091-4F8C-9214-4A9EBEB12BC3}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{ABEE79B5-E206-4333-928C-BDB45932D5FB}|Business\\Business.csproj|c:\\users\\user\\source\\repos\\api\\business\\services\\concrete\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABEE79B5-E206-4333-928C-BDB45932D5FB}|Business\\Business.csproj|solutionrelative:business\\services\\concrete\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB33A72F-8091-4F8C-9214-4A9EBEB12BC3}|Presentation\\Presentation.csproj|c:\\users\\user\\source\\repos\\api\\presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB33A72F-8091-4F8C-9214-4A9EBEB12BC3}|Presentation\\Presentation.csproj|solutionrelative:presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABEE79B5-E206-4333-928C-BDB45932D5FB}|Business\\Business.csproj|c:\\users\\user\\source\\repos\\api\\business\\features\\product\\commands\\createproduct\\createproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABEE79B5-E206-4333-928C-BDB45932D5FB}|Business\\Business.csproj|solutionrelative:business\\features\\product\\commands\\createproduct\\createproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABEE79B5-E206-4333-928C-BDB45932D5FB}|Business\\Business.csproj|c:\\users\\user\\source\\repos\\api\\business\\features\\product\\commands\\createproduct\\createproductcommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABEE79B5-E206-4333-928C-BDB45932D5FB}|Business\\Business.csproj|solutionrelative:business\\features\\product\\commands\\createproduct\\createproductcommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABEE79B5-E206-4333-928C-BDB45932D5FB}|Business\\Business.csproj|c:\\users\\user\\source\\repos\\api\\business\\features\\product\\queries\\getallproducts\\getallproductshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABEE79B5-E206-4333-928C-BDB45932D5FB}|Business\\Business.csproj|solutionrelative:business\\features\\product\\queries\\getallproducts\\getallproductshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABEE79B5-E206-4333-928C-BDB45932D5FB}|Business\\Business.csproj|c:\\users\\user\\source\\repos\\api\\business\\features\\product\\queries\\getallproducts\\getallproductsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABEE79B5-E206-4333-928C-BDB45932D5FB}|Business\\Business.csproj|solutionrelative:business\\features\\product\\queries\\getallproducts\\getallproductsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABEE79B5-E206-4333-928C-BDB45932D5FB}|Business\\Business.csproj|c:\\users\\user\\source\\repos\\api\\business\\features\\product\\queries\\getproduct\\getproductquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABEE79B5-E206-4333-928C-BDB45932D5FB}|Business\\Business.csproj|solutionrelative:business\\features\\product\\queries\\getproduct\\getproductquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABEE79B5-E206-4333-928C-BDB45932D5FB}|Business\\Business.csproj|c:\\users\\user\\source\\repos\\api\\business\\features\\product\\queries\\getproduct\\getproducthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABEE79B5-E206-4333-928C-BDB45932D5FB}|Business\\Business.csproj|solutionrelative:business\\features\\product\\queries\\getproduct\\getproducthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1C7A5E1A-14B9-4DA9-B1A1-B32E1E2335F5}|Data\\Data.csproj|c:\\users\\user\\source\\repos\\api\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C7A5E1A-14B9-4DA9-B1A1-B32E1E2335F5}|Data\\Data.csproj|solutionrelative:data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,104 +46,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RoleService.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\API\\Business\\Services\\Concrete\\RoleService.cs",
-              "RelativeDocumentMoniker": "Business\\Services\\Concrete\\RoleService.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\API\\Business\\Services\\Concrete\\RoleService.cs",
-              "RelativeToolTip": "Business\\Services\\Concrete\\RoleService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T18:28:14.738Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\API\\Presentation\\Program.cs",
-              "RelativeDocumentMoniker": "Presentation\\Program.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\API\\Presentation\\Program.cs",
-              "RelativeToolTip": "Presentation\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "RoleController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\API\\Presentation\\Controllers\\RoleController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Controllers\\RoleController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\API\\Presentation\\Controllers\\RoleController.cs",
+              "RelativeToolTip": "Presentation\\Controllers\\RoleController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T18:28:07.576Z",
+              "WhenOpened": "2025-01-22T15:48:14.588Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CreateProductCommandValidator.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\API\\Business\\Features\\Product\\Commands\\CreateProduct\\CreateProductCommandValidator.cs",
-              "RelativeDocumentMoniker": "Business\\Features\\Product\\Commands\\CreateProduct\\CreateProductCommandValidator.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\API\\Business\\Features\\Product\\Commands\\CreateProduct\\CreateProductCommandValidator.cs",
-              "RelativeToolTip": "Business\\Features\\Product\\Commands\\CreateProduct\\CreateProductCommandValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\API\\Presentation\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\API\\Presentation\\Controllers\\ProductController.cs*",
+              "RelativeToolTip": "Presentation\\Controllers\\ProductController.cs*",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAABpAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T18:27:55.71Z",
+              "WhenOpened": "2025-01-22T15:46:11.31Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CreateProductCommand.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\API\\Business\\Features\\Product\\Commands\\CreateProduct\\CreateProductCommand.cs",
-              "RelativeDocumentMoniker": "Business\\Features\\Product\\Commands\\CreateProduct\\CreateProductCommand.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\API\\Business\\Features\\Product\\Commands\\CreateProduct\\CreateProductCommand.cs",
-              "RelativeToolTip": "Business\\Features\\Product\\Commands\\CreateProduct\\CreateProductCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "RoleService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\API\\Business\\Services\\Concrete\\RoleService.cs",
+              "RelativeDocumentMoniker": "Business\\Services\\Concrete\\RoleService.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\API\\Business\\Services\\Concrete\\RoleService.cs",
+              "RelativeToolTip": "Business\\Services\\Concrete\\RoleService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T18:27:53.69Z",
+              "WhenOpened": "2025-01-22T15:28:44.458Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "GetAllProductsQuery.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\API\\Business\\Features\\Product\\Queries\\GetAllProducts\\GetAllProductsQuery.cs",
-              "RelativeDocumentMoniker": "Business\\Features\\Product\\Queries\\GetAllProducts\\GetAllProductsQuery.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\API\\Business\\Features\\Product\\Queries\\GetAllProducts\\GetAllProductsQuery.cs",
-              "RelativeToolTip": "Business\\Features\\Product\\Queries\\GetAllProducts\\GetAllProductsQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "DbInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\API\\Data\\DbInitializer.cs",
+              "RelativeDocumentMoniker": "Data\\DbInitializer.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\API\\Data\\DbInitializer.cs",
+              "RelativeToolTip": "Data\\DbInitializer.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T18:23:58.677Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GetAllProductsHandler.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\API\\Business\\Features\\Product\\Queries\\GetAllProducts\\GetAllProductsHandler.cs",
-              "RelativeDocumentMoniker": "Business\\Features\\Product\\Queries\\GetAllProducts\\GetAllProductsHandler.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\API\\Business\\Features\\Product\\Queries\\GetAllProducts\\GetAllProductsHandler.cs",
-              "RelativeToolTip": "Business\\Features\\Product\\Queries\\GetAllProducts\\GetAllProductsHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T18:23:56.541Z",
+              "WhenOpened": "2025-01-22T15:31:25.82Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GetProductQuery.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\API\\Business\\Features\\Product\\Queries\\GetProduct\\GetProductQuery.cs",
-              "RelativeDocumentMoniker": "Business\\Features\\Product\\Queries\\GetProduct\\GetProductQuery.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\API\\Business\\Features\\Product\\Queries\\GetProduct\\GetProductQuery.cs",
-              "RelativeToolTip": "Business\\Features\\Product\\Queries\\GetProduct\\GetProductQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T18:24:03.604Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "GetProductHandler.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\API\\Business\\Features\\Product\\Queries\\GetProduct\\GetProductHandler.cs",
-              "RelativeDocumentMoniker": "Business\\Features\\Product\\Queries\\GetProduct\\GetProductHandler.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\API\\Business\\Features\\Product\\Queries\\GetProduct\\GetProductHandler.cs",
-              "RelativeToolTip": "Business\\Features\\Product\\Queries\\GetProduct\\GetProductHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T18:24:02.986Z"
             }
           ]
         },

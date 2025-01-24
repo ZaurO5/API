@@ -1,6 +1,8 @@
-﻿using Business.Dtos.Auth;
-using Business.Services.Abstract;
+﻿using Business.Features.Auth.Commands.AuthLogin;
+using Business.Features.Auth.Commands.AuthRegister;
+using Business.Features.Auth.Dtos;
 using Business.Wrappers;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Presentation.Controllers
@@ -9,37 +11,37 @@ namespace Presentation.Controllers
     [Route("api/[controller]")]
     public class AuthController : ControllerBase
     {
-        private readonly IAuthService _authService;
+        private readonly IMediator _mediator;
 
-        public AuthController(IAuthService authService)
+        public AuthController(IMediator mediator)
         {
-            _authService = authService;
+            _mediator = mediator;
         }
 
         #region Documentation
         /// <summary>
         /// User registration
         /// </summary>
-        /// <param name="model"></param>
+        /// <param name="request"></param>
         [ProducesResponseType(typeof(Response), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(Response), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(Response), StatusCodes.Status500InternalServerError)]
-        #endregion 
+        #endregion
         [HttpPost("register")]
-        public async Task<Response> RegisterAsync(AuthRegisterDto model)
-        => await _authService.RegisterAsync(model);
+        public async Task<Response> RegisterAsync(AuthRegisterCommand request)
+        => await _mediator.Send(request);
 
         #region Documentation
         /// <summary>
         /// User login
         /// </summary>
-        /// <param name="model"></param>
-        [ProducesResponseType(typeof(Response<AuthLoginResponseDto>), StatusCodes.Status200OK)]
+        /// <param name="request"></param>
+        [ProducesResponseType(typeof(Response<ResponseTokenDto>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(Response), StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(typeof(Response), StatusCodes.Status500InternalServerError)]
         #endregion
         [HttpPost("login")]
-        public async Task<Response<AuthLoginResponseDto>> LoginAsync(AuthLoginDto model)
-        => await _authService.LoginAsync(model);
+        public async Task<Response<ResponseTokenDto>> LoginAsync(AuthLoginCommand request)
+        => await _mediator.Send(request);
     }
 }

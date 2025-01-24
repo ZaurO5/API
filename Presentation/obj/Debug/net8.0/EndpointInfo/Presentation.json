@@ -15,17 +15,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/AuthRegisterDto"
+                "$ref": "#/components/schemas/AuthRegisterCommand"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/AuthRegisterDto"
+                "$ref": "#/components/schemas/AuthRegisterCommand"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/AuthRegisterDto"
+                "$ref": "#/components/schemas/AuthRegisterCommand"
               }
             }
           }
@@ -105,17 +105,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/AuthLoginDto"
+                "$ref": "#/components/schemas/AuthLoginCommand"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/AuthLoginDto"
+                "$ref": "#/components/schemas/AuthLoginCommand"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/AuthLoginDto"
+                "$ref": "#/components/schemas/AuthLoginCommand"
               }
             }
           }
@@ -126,17 +126,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/AuthLoginResponseDtoResponse"
+                  "$ref": "#/components/schemas/ResponseTokenDtoResponse"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AuthLoginResponseDtoResponse"
+                  "$ref": "#/components/schemas/ResponseTokenDtoResponse"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AuthLoginResponseDtoResponse"
+                  "$ref": "#/components/schemas/ResponseTokenDtoResponse"
                 }
               }
             }
@@ -715,17 +715,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UserAddToRoleDto"
+                "$ref": "#/components/schemas/AddRoleToUserCommand"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/UserAddToRoleDto"
+                "$ref": "#/components/schemas/AddRoleToUserCommand"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/UserAddToRoleDto"
+                "$ref": "#/components/schemas/AddRoleToUserCommand"
               }
             }
           }
@@ -823,17 +823,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UserRemoveRoleDto"
+                "$ref": "#/components/schemas/RemoveRoleFromUserCommand"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/UserRemoveRoleDto"
+                "$ref": "#/components/schemas/RemoveRoleFromUserCommand"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/UserRemoveRoleDto"
+                "$ref": "#/components/schemas/RemoveRoleFromUserCommand"
               }
             }
           }
@@ -925,7 +925,21 @@
   },
   "components": {
     "schemas": {
-      "AuthLoginDto": {
+      "AddRoleToUserCommand": {
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "string",
+            "nullable": true
+          },
+          "roleId": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AuthLoginCommand": {
         "type": "object",
         "properties": {
           "email": {
@@ -939,30 +953,7 @@
         },
         "additionalProperties": false
       },
-      "AuthLoginResponseDto": {
-        "type": "object",
-        "properties": {
-          "token": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "AuthLoginResponseDtoResponse": {
-        "type": "object",
-        "properties": {
-          "data": {
-            "$ref": "#/components/schemas/AuthLoginResponseDto"
-          },
-          "message": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "AuthRegisterDto": {
+      "AuthRegisterCommand": {
         "type": "object",
         "properties": {
           "email": {
@@ -1084,6 +1075,20 @@
         "type": "integer",
         "format": "int32"
       },
+      "RemoveRoleFromUserCommand": {
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "string",
+            "nullable": true
+          },
+          "roleId": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "Response": {
         "type": "object",
         "properties": {
@@ -1093,6 +1098,29 @@
               "type": "string"
             },
             "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ResponseTokenDto": {
+        "type": "object",
+        "properties": {
+          "token": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ResponseTokenDtoResponse": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "$ref": "#/components/schemas/ResponseTokenDto"
           },
           "message": {
             "type": "string",
@@ -1165,20 +1193,6 @@
         },
         "additionalProperties": false
       },
-      "UserAddToRoleDto": {
-        "type": "object",
-        "properties": {
-          "userId": {
-            "type": "string",
-            "nullable": true
-          },
-          "roleId": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
       "UserDto": {
         "type": "object",
         "properties": {
@@ -1204,20 +1218,6 @@
             "nullable": true
           },
           "message": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "UserRemoveRoleDto": {
-        "type": "object",
-        "properties": {
-          "userId": {
-            "type": "string",
-            "nullable": true
-          },
-          "roleId": {
             "type": "string",
             "nullable": true
           }

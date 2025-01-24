@@ -8,14 +8,14 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "model",
-        "Type": "Business.Dtos.Auth.AuthLoginDto",
+        "Name": "request",
+        "Type": "Business.Features.Auth.Commands.AuthLogin.AuthLoginCommand",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "Business.Wrappers.Response\u00601[[Business.Dtos.Auth.AuthLoginResponseDto, Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "Business.Wrappers.Response\u00601[[Business.Features.Auth.Dtos.ResponseTokenDto, Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -52,8 +52,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "model",
-        "Type": "Business.Dtos.Auth.AuthRegisterDto",
+        "Name": "request",
+        "Type": "Business.Features.Auth.Commands.AuthRegister.AuthRegisterCommand",
         "IsRequired": true
       }
     ],
@@ -316,7 +316,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "Business.Wrappers.Response\u00601[[System.Collections.Generic.List\u00601[[Business.Dtos.Role.RoleDto, Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Type": "Business.Wrappers.Response\u00601[[System.Collections.Generic.List\u00601[[Business.Features.Role.Dtos.RoleDto, Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -345,7 +345,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "Business.Wrappers.Response\u00601[[System.Collections.Generic.List\u00601[[Business.Dtos.User.UserDto, Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Type": "Business.Wrappers.Response\u00601[[System.Collections.Generic.List\u00601[[Business.Features.User.Dtos.UserDto, Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -373,8 +373,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "model",
-        "Type": "Business.Dtos.UserRole.UserAddToRoleDto",
+        "Name": "request",
+        "Type": "Business.Features.UserRole.Commands.AddRoleToUser.AddRoleToUserCommand",
         "IsRequired": true
       }
     ],
@@ -426,8 +426,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "model",
-        "Type": "Business.Dtos.UserRole.UserRemoveRoleDto",
+        "Name": "request",
+        "Type": "Business.Features.UserRole.Commands.RemoveRoleFromUser.RemoveRoleFromUserCommand",
         "IsRequired": true
       }
     ],

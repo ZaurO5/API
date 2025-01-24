@@ -1,8 +1,6 @@
 using API;
 using Business.Extensions;
 using Business.MappingProfiles;
-using Business.Services.Abstract;
-using Business.Services.Concrete;
 using Common.Entities;
 using Data.Contexts;
 using Data.Repositories.Product;
@@ -91,15 +89,6 @@ builder.Services.AddAutoMapper(x =>
 
 builder.Services.AddScoped<IProductReadRepository, ProductReadRepository>();
 builder.Services.AddScoped<IProductWriteRepository, ProductWriteRepository>();
-
-#endregion
-
-#region Services
-
-builder.Services.AddScoped<IAuthService, AuthService>();
-builder.Services.AddScoped<IUserRoleService, UserRoleService>();
-builder.Services.AddScoped<IUserService, UserService>();
-builder.Services.AddScoped<IRoleService, RoleService>();
 
 #endregion
 

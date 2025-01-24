@@ -1,7 +1,7 @@
-﻿using Business.Dtos.Role;
-using Business.Dtos.User;
-using Business.Services.Abstract;
+﻿using Business.Features.Role.Dtos;
+using Business.Features.Role.Queries.GetAllRoles;
 using Business.Wrappers;
+using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -10,14 +10,13 @@ namespace Presentation.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    [Authorize(Roles = "Admin", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class RoleController : ControllerBase
     {
-        private readonly IRoleService _roleService;
+        private readonly IMediator _mediator;
 
-        public RoleController(IRoleService roleService)
+        public RoleController(IMediator mediator)
         {
-            _roleService = roleService;
+            _mediator = mediator;
         }
 
         #region Documentation
@@ -29,6 +28,6 @@ namespace Presentation.Controllers
         #endregion
         [HttpGet]
         public async Task<Response<List<RoleDto>>> GetAllRolesAsync()
-        => await _roleService.GetAllRolesAsync();
+        => await _mediator.Send(new GetAllRolesQuery());
     }
 }

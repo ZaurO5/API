@@ -4,7 +4,6 @@ using Business.Features.Product.Commands.UpdateProduct;
 using Business.Features.Product.Dtos;
 using Business.Features.Product.Queries.GetAllProducts;
 using Business.Features.Product.Queries.GetProduct;
-using Business.Services.Abstract;
 using Business.Wrappers;
 using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -15,7 +14,8 @@ namespace Presentation.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    [Authorize(Roles = "Sellers, Admin", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    [Authorize(Roles = "Seller", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+
     public class ProductController : ControllerBase
     {
         private readonly IMediator _mediator;

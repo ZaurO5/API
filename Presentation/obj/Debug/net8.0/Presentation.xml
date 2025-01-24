@@ -4,17 +4,17 @@
         <name>Presentation</name>
     </assembly>
     <members>
-        <member name="M:Presentation.Controllers.AuthController.RegisterAsync(Business.Dtos.Auth.AuthRegisterDto)">
+        <member name="M:Presentation.Controllers.AuthController.RegisterAsync(Business.Features.Auth.Commands.AuthRegister.AuthRegisterCommand)">
             <summary>
             User registration
             </summary>
-            <param name="model"></param>
+            <param name="request"></param>
         </member>
-        <member name="M:Presentation.Controllers.AuthController.LoginAsync(Business.Dtos.Auth.AuthLoginDto)">
+        <member name="M:Presentation.Controllers.AuthController.LoginAsync(Business.Features.Auth.Commands.AuthLogin.AuthLoginCommand)">
             <summary>
             User login
             </summary>
-            <param name="model"></param>
+            <param name="request"></param>
         </member>
         <member name="M:Presentation.Controllers.ProductController.GetAllProductsAsync">
             <summary>
@@ -61,17 +61,17 @@
             Users list
             </summary>
         </member>
-        <member name="M:Presentation.Controllers.UserRoleController.AddRoleToUserAsync(Business.Dtos.UserRole.UserAddToRoleDto)">
+        <member name="M:Presentation.Controllers.UserRoleController.AddRoleToUserAsync(Business.Features.UserRole.Commands.AddRoleToUser.AddRoleToUserCommand)">
             <summary>
             Adding role to user
             </summary>
-            <param name="model"></param>
+            <param name="request"></param>
         </member>
-        <member name="M:Presentation.Controllers.UserRoleController.RemoveRoleFromUserAsync(Business.Dtos.UserRole.UserRemoveRoleDto)">
+        <member name="M:Presentation.Controllers.UserRoleController.RemoveRoleFromUserAsync(Business.Features.UserRole.Commands.RemoveRoleFromUser.RemoveRoleFromUserCommand)">
             <summary>
             Deleting role from user
             </summary>
-            <param name="model"></param>
+            <param name="request"></param>
         </member>
     </members>
 </doc>

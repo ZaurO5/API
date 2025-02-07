@@ -10,7 +10,7 @@ namespace Presentation.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    [Authorize(Roles = "Admin", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    [Authorize(Roles = "Seller,Admin", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class UserRoleController : ControllerBase
     {
         private readonly IMediator _mediator;

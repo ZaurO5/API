@@ -1,6 +1,7 @@
 using API;
 using Business.Extensions;
 using Business.MappingProfiles;
+using Business.Services.Producer;
 using Common.Entities;
 using Data.Contexts;
 using Data.Repositories.Product;
@@ -11,6 +12,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Presentation.Middlewares;
+using Serilog;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -94,6 +96,14 @@ builder.Services.AddScoped<IProductWriteRepository, ProductWriteRepository>();
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddApplicationExtensions();
+
+Log.Logger = new LoggerConfiguration()
+             .ReadFrom.Configuration(builder.Configuration)
+             .CreateLogger();
+
+builder.Services.AddSerilog();
+
+builder.Services.AddScoped<IProducerService, ProducerService>();
 
 var app = builder.Build();
 

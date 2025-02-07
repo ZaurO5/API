@@ -14,7 +14,7 @@ namespace Presentation.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    [Authorize(Roles = "Seller", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    [Authorize(Roles = "Seller,Admin", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
 
     public class ProductController : ControllerBase
     {
